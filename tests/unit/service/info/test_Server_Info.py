@@ -26,11 +26,9 @@ class test_Server_Info(TestCase):
 
     def test_versions(self):
         with self.server_info.versions() as _:
-            assert list_set(_.json()) == [ 'mgraph_ai_service_base'     ,
-                                           'osbot_aws'                  ,
-                                           'osbot_fast_api'             ,
-                                           'osbot_fast_api_serverless'  ,
-                                           'osbot_utils'                ]
+            assert list_set(_.json()) == ['osbot_fast_api',
+                                          'osbot_fast_api_serverless',
+                                          'osbot_utils']
 
     def test_server_info(self):
         with self.server_info.server_info() as _:
