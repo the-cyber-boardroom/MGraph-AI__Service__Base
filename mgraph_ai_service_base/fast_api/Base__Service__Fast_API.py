@@ -5,7 +5,7 @@ from mgraph_ai_service_base.config                           import FAST_API__TI
 from mgraph_ai_service_base.utils.Version                    import version__mgraph_ai_service_base
 
 
-class Service__Fast_API(Serverless__Fast_API):
+class Base__Service__Fast_API(Serverless__Fast_API):
     name        = FAST_API__TITLE
     version     = version__mgraph_ai_service_base
     description = FAST_API__DESCRIPTION

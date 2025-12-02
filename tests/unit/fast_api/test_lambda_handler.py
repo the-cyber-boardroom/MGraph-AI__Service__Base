@@ -8,10 +8,11 @@ from mgraph_ai_service_base.fast_api.lambda_handler      import run
 
 
 class test_lambda_handler(TestCase):
-    # @classmethod
-    # def setUpClass(cls):
-    #     setup_local_stack()
-    #     cls.handler = staticmethod(run)
+
+    @classmethod
+    def setUpClass(cls):
+        #setup_local_stack()
+        cls.handler = staticmethod(run)
 
     def test__setUpClass(self):
         assert type(self.handler) is types.FunctionType
