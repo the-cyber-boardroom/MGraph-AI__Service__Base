@@ -1,5 +1,5 @@
 from enum import Enum
 
-class Enum__Service_Status(Enum):
-    operational : str = 'operational'
-    degraded    : str = 'degraded'
+class Enum__Service_Status(str, Enum):
+    operational = 'operational'
+    degraded    = 'degraded'
