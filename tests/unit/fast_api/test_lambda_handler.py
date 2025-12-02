@@ -3,15 +3,15 @@ import types
 import pytest
 from unittest                                            import TestCase
 from osbot_utils.utils.Json                              import str_to_json
-from tests.unit.Service__Fast_API__Test_Objs             import setup_local_stack
+#from tests.unit.Service__Fast_API__Test_Objs             import setup_local_stack
 from mgraph_ai_service_base.fast_api.lambda_handler      import run
 
 
 class test_lambda_handler(TestCase):
-    @classmethod
-    def setUpClass(cls):
-        setup_local_stack()
-        cls.handler = staticmethod(run)
+    # @classmethod
+    # def setUpClass(cls):
+    #     setup_local_stack()
+    #     cls.handler = staticmethod(run)
 
     def test__setUpClass(self):
         assert type(self.handler) is types.FunctionType
